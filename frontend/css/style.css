@@ -1,0 +1,551 @@
+body {
+    background-color: #a4de03;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome{
+    font-size: 60px;
+    margin-top: 60px;
+    color: white;
+}
+
+#welcome + p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    padding: 0.8rem 1rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid darkgreen;
+    border-radius: 4px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.box-1{
+    background-image: url("./images/homepic.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
+
+.button-container {
+    margin-top: 40px;
+}
+
+button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+#main-footer {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container1 {
+    float: right;
+    width: 400px;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    max-height: 600px;
+}
+
+#reg-head {
+    background: white;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.0rem;
+    font-weight: bold;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#patient-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    color: black;
+    text-align: left;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+#dob{
+    margin-left: 0;
+    display:block;
+    color: #555
+}
+
+#patient-form input[type='text'],
+#patient-form input[type='number'],
+#patient-form input[type='email'],
+#patient-form select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#patient-form input[type='datetime-local']{
+    margin-left: 0;
+    display: block;
+}
+
+#patient-form input[type='text']:focus,
+#patient-form input[type='number']:focus,
+#patient-form input[type='email']:focus,
+#patient-form select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+#patient-form button[type='submit'] {
+    display: block;
+    width: 97%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+#patient-form button[type='submit']:hover {
+    background-color: darkgreen;
+}
+
+.success {
+    background-color: white;
+    font-weight: 600;
+    color: red;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+#patient-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+#patient-list li {
+    padding: 10px;
+    background-color: #4CAF50;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#patient-list li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#patient-list li:hover {
+    background-color: darkgreen;
+}
+
+#search-patients {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#patient-details strong, #medical-history strong, #appt-list strong, #prep-list strong {
+    margin-top: 2rem;
+    padding: 1rem;
+    color: darkgreen;
+    text-align: left;
+}
+
+#patient-details, #medical-history, #appt-list, #prep-list {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: #333;
+    border-radius: 4px;
+    border: 4px solid black;
+    text-align: left;
+    line-height: 1.4;
+}
+
+#appt-list li {
+    padding: 1rem;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+#sub-head {
+    color: black;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+#edit-basic-btn, #edit-mh-btn, #edit-appt-btn {
+    background-color: lightgray;
+    color: black;
+    display: block;
+    margin-left: 1rem;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 3px;
+}
+
+#edit-mh-btn:hover, #edit-basic-btn:hover, #edit-appt-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+#mh, #basic, #appt {
+    color: black;
+}
+
+#save-mh-btn, #cancel-mh-btn, #save-basic-btn, #cancel-basic-btn {
+    background-color: lightskyblue;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 8px 10px;
+}
+
+#save-mh-btn:hover, #cancel-mh-btn:hover, #save-basic-btn:hover, #cancel-basic-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+#appt-list {
+   list-style: none;
+   padding: 0;
+   margin: 1rem, 0;
+   color: #333;
+   font-family: Arial, sans-serif;
+}
+
+.main {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4CAF50;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+.sidebar-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+}
+
+#appthead {
+    color: black;
+    padding: 0;
+    margin: 0px 0 20px 0;
+}
+
+#apptList {
+    background-color: white;
+    display: block;
+    padding: 4rem;
+    margin-top: 36px;
+    margin-left: 15px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    max-width: 600px;
+    height: auto;
+}
+
+#apptUl {
+    list-style-type: none;      
+    margin: 0;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
+
+#apptUl li a {
+    background: #4CAF50;    
+    text-decoration: none;    
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+#apptUl li {
+    color: black;
+    font-size: 17px;
+}
+
+#apptUl li a:hover {
+    background: darkgreen;     
+    color: white;
+}
+
+/* Time Update Section */
+.time-update-section {
+    background: rgb(233, 232, 231);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.time-update-section .form-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.time-update-section label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    min-width: 200px;
+}
+
+.time-input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.btn-update {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.1s ease;
+}
+
+.btn-update:hover {
+    background: darkgreen;
+}
+
+.del-btn {
+    background: #ee5a52;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.1s ease;
+}
+
+.del-btn:hover {
+    background-color: darkred;
+}
+
+.back-btn {
+    background: rgb(49, 49, 188);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.1s ease;
+}
+
+.back-btn:hover {
+    background-color: darkblue;
+}
+
+.patient-det {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.1s ease;
+}
+
+#patient-det:hover {
+    background-color: darkgreen;
+}
+
+/* Prescriptions Section */
+.upload-box {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.upload-box input[type="file"] {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.upload-box button {
+    background-color: rgb(122, 159, 48);
+    font-size: 15px;
+    padding: 12px;
+}
+
+.upload-box button:hover {
+    background-color: rgb(78, 117, 0);
+}
+
+#prescriptions {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.prescription-item {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prescription-item:hover {
+    border-color: #4CAF50;
+}
+
+.prescription-item a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    flex: 1;
+}
+
+.prescription-item a:hover {
+    color: #1B5E20;
+    text-decoration: underline;
+}
+
+.prescription-item button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-left: 1rem;
+}
+
+.prescription-item button:hover {
+    background: #cc0000;
+}

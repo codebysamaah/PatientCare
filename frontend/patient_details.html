@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Patient Details</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="sidebar">
+            <h2 class="sidebar-title">PatientCare</h2>
+            <h3 style="font-size: 18px; font-weight: 100; padding-top: 2px; padding-bottom: 1rem;">Doctor Portal</h3>
+            <a href="homepage.html">🏠 Home</a>
+            <a href="patient_form.html">📝 Register Patient</a>
+            <a href="view_patients.html">🔍 View Patients</a>
+            <a href="appointments.html">📅 Appointments</a>
+        </div>
+
+        <div class="main">
+            <h1 id="reg-head">Patient Details</h1>
+            <section class="container">
+                <h2 id="sub-head">Basic Information</h2>
+                <div id="patient-details"></div>
+                <button id="edit-basic-btn">Edit Basic Information</button>
+                <form id="basic-form" style="display:none;">
+                    <label id="basic">First Name:<br>
+                        <textarea id="editFirst" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <label id="basic">Last Name:<br>
+                        <textarea id="editLast" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <label id="basic">Health Card:<br>
+                        <textarea id="editHC" rows="3" cols="30"></textarea>
+                    </label><br>
+                    
+                    <label id="basic">Email:<br>
+                        <textarea id="editEmail" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <label id="basic">Age:<br>
+                        <textarea id="editAge" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <label id="basic">Gender:<br>
+                        <textarea id="editGender" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <label id="basic">Contact:<br>
+                        <textarea id="editContact" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <label id="basic">Address:<br>
+                        <textarea id="editAdd" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <button type="submit" id="save-basic-btn">Save</button>
+                    <button type="button" id="cancel-basic-btn">Cancel</button>
+                </form>
+
+                <h2 id="sub-head">Medical History</h2>
+                <div id="medical-history"></div>
+                <button id="edit-mh-btn">Edit Medical History</button>
+                <form id="medical-history-form" style="display:none;">
+                    <label id="mh">Past Illnesses:<br>
+                        <textarea id="pastIllnesses" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <label id="mh">Surgeries:<br>
+                        <textarea id="surgeries" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <label id="mh">Allergies:<br>
+                        <textarea id="allergies" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <label id="mh">Ongoing Medications:<br>
+                        <textarea id="ongoingMedications" rows="3" cols="30"></textarea>
+                    </label><br>
+
+                    <button type="submit" id="save-mh-btn">Save</button>
+                    <button type="button" id="cancel-mh-btn">Cancel</button>
+                </form>
+                
+                <h2 id="sub-head">Appointments</h2>
+                <div id="appts"></div>
+                <ul id="appt-list"></ul>
+
+                <h2 id="sub-head">Prescriptions</h2>
+                <div id="prep-list">
+                    <!-- Upload Form -->
+                    <div class="upload-box">
+                        <h3>Upload New Prescription</h3>
+                        <input type="file" id="prescriptionFile" accept=".pdf">
+                        <button id="upload-file-btn">Upload PDF</button>
+                    </div>
+
+                    <!-- Prescriptions List -->
+                    <h3>Current Prescriptions</h3>
+                    <ul id="prescriptions"></ul>
+                </div>
+
+                <button id="button">Back to Patients List</button>
+            </section>
+        </div>
+        
+        <script src="patient_details.js"></script>
+    </body>
+</html>

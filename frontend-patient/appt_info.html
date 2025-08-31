@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="sidebar-title">PatientCare</h2>
+        <h3 style="font-size: 18px; font-weight: 100; padding-top: 2px; padding-bottom: 1rem;">Patient Portal</h3>
+        <a id= "homeLink" href="#">🏠 Home</a>
+        <a id= "profLink" href="#">👤 Profile</a>
+        <a id= "apptLink" href="#">📅 My Appointments</a>
+        <a id= "presLink" href="#">📄 My Prescriptions</a>
+    </div>
+    
+    <div class="main">
+        <h1 id="reg-head">Appointment Details</h1>
+        <section class="container">
+            <div class="time-update-section">
+                <div class="expectedTime">
+                    <label>Expected Appointment Time:</label>
+                    <label id="time"></label>
+                </div>
+            </div>
+            <button id="back-btn">Back to Appointments List</button>
+        </section>
+    </div>
+
+    <script src="appt_info.js"></script>
+</body>
+</html>

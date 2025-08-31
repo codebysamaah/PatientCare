@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="sidebar-title">PatientCare</h2>
+        <h3 style="font-size: 18px; font-weight: 100; padding-top: 2px; padding-bottom: 1rem;">Doctor Portal</h3>
+        <a href="homepage.html">🏠 Home</a>
+        <a href="patient_form.html">📝 Register Patient</a>
+        <a href="view_patients.html">🔍 View Patients</a>
+        <a href="appointments.html">📅 Appointments</a>
+    </div>
+
+    <div class="main">
+        <h1 id="reg-head">Appointment Details</h1>
+        <section class="container">
+            <!-- Time Update Section -->
+            <div class="time-update-section">
+                <div class="form-group">
+                    <label>Expected Appointment Time:</label>
+                    <input type="time" id="expectedTime" class="time-input">
+                    <button id="updateTimeBtn" class="btn-update">Update Time</button>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="del-btn">Delete Appointment</button>
+                <button class="back-btn">Back to Appointments List</button>
+                <button class="patient-det">Go to Patient Details</button>
+            </div>
+
+            <div class="msg"></div>
+        </section>
+    </div>
+
+    <script src="view_appt.js"></script>
+</body>
+</html>
