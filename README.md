@@ -30,10 +30,11 @@ Doctors can manage appointments, patient medical history, and prescriptions, whi
 
 
 ## **Folder Structure**
-''' PatientCare/
+```
+PatientCare/
 │
 ├── frontend/ # Doctor portal
 ├── frontend-patient/ # Patient portal
 ├── backend/ # API and database logic
 └── README.md # This file
-''' 
+```
