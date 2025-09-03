@@ -30,7 +30,7 @@ Doctors can manage appointments, patient medical history, and prescriptions, whi
 
 
 ## **Folder Structure**
-patient-management-system/
+PatientCare/
 │
 ├── frontend/ # Doctor portal
 ├── frontend-patient/ # Patient portal
