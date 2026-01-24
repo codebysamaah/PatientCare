@@ -33,7 +33,8 @@ This project demonstrates full-stack development skills, including CRUD operatio
 ## **Tech Stack**
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
+- **Database:** MongoDB
+- **Deployment:** Vercel (frontend), Render (backend)
 
 ## **Next Steps**
 - Add charts for doctors to view patient statistics and upcoming appointments  
