@@ -1,5 +1,7 @@
 # Patient Management System
 
+## Description
+
 A full-stack healthcare web application with **separate portals** for doctors and patients.  
 Doctors can manage appointments, patient medical history, and prescriptions, while patients can view their own information and schedule visits. 
 
