@@ -5,9 +5,7 @@ Doctors can manage appointments, patient medical history, and prescriptions, whi
 
 This project demonstrates full-stack development skills, including CRUD operations, user authentication, database integration, and responsive front-end design.
 
----
-
-## **Features**
+## Features
 
 ### Doctor Portal
 - Register a new patient
@@ -28,20 +26,18 @@ This project demonstrates full-stack development skills, including CRUD operatio
 - Responsive design for desktop and mobile use
 - Error handling and form validation for smooth user experience
 
----
-
-## **Tech Stack**
+## Tech Stack
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB
 - **Deployment:** Vercel (frontend), Render (backend)
 
-## **Next Steps**
+## Next Steps
 - Add charts for doctors to view patient statistics and upcoming appointments  
 - Email/SMS reminders for appointments
 - Improve responsive design and user experience
   
-## **Folder Structure**
+## Folder Structure
 ```
 PatientCare/
 │
