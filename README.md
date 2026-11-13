@@ -30,9 +30,9 @@ This project demonstrates full-stack development skills, including CRUD operatio
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Node.js, Express.js  
 - **Database:** MongoDB
-- **Deployment:** Vercel (frontend), Render (backend)
 
 ## Next Steps
+- Containerize and deploy application
 - Add charts for doctors to view patient statistics and upcoming appointments  
 - Email/SMS reminders for appointments
 - Improve responsive design and user experience
